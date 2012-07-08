@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon" href="favicon.ico" />
+<style>
+	body
+	{
+		font-family: arial, verdana, sans-serif;
+	}
+	
+	form
+	{
+		margin-right: 10px;
+		margin-bottom: 50px;
+		border: 1px dashed gray;
+		display: table;
+		padding: 5px;
+		float: left;
+	}	
+</style>
+<title>
+PDF Magic
+</title>
+</head>
+<body>
+<form action="convert.php" method="post" enctype="multipart/form-data">
+<h1>PDF to partial grayscaled </h1>
+<table>
+<tr><td>File:</td><td><input name="file" type="file"></td></tr>
+<tr><td>Color pages:</td><td><input name="pages" placeholder="1, 10-23, 36, 45-50" type="text"></td></tr>
+<tr><td style="text-align:center" colspan="2"><input type="submit"></td></tr>
+</table>
+</form>
+</body>
+</html>
